@@ -13,7 +13,7 @@ const options = {
       version: '1.0.0',
       description: 'API para gerenciamento de pedidos (CRUD)',
     },
-    servers: [{ url: 'http://localhost:3000', description: 'Servidor local' }],
+    servers: [{ url: 'http://localhost:3001', description: 'Servidor local' }],
   },
   apis: [path.join(__dirname, '../routes/*.js')],
 };

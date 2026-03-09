@@ -2,7 +2,7 @@
  * Validação do body para criação e atualização de pedidos
  */
 
-function validateOrderBody(req, res, next) {
+const validateOrderBody = (req, res, next) => {
   const { numeroPedido, valorTotal, dataCriacao, items } = req.body;
 
   const errors = [];

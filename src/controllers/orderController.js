@@ -76,7 +76,9 @@ async function deleteOrder(req, res, next) {
         message: 'Pedido não encontrado para o número informado.',
       });
     }
-    res.status(204).send();
+    res.status(204).json({ 
+      message: 'Pedido excluido com sucesso'
+  });
   } catch (err) {
     next(err);
   }
